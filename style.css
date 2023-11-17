@@ -1,0 +1,384 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gilroy';
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+    background: #F7F7F7;
+}
+
+@font-face {
+    font-family: MDPrimer;
+    src: url(fonts/MDPrimer.ttf);
+}
+
+#nav .logo-D{
+    /* height: 100px; */
+    width: 100%;
+    padding-right: 30px;
+    /* background-color: burlywood; */
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    z-index: 99;
+    position: fixed;
+}
+
+#nav-part2{
+    padding-top: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#links a{
+    padding: 24px;
+    text-decoration: none;
+    color: #333;
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+}
+
+#icon{
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+}
+
+#nav .logo-D .logo-P{
+    /* background-color: antiquewhite; */
+    height: 120px;
+    overflow: hidden;
+}
+
+#nav .logo-D .logo-P h3{
+    padding: 25px;
+    font-family: MDPrimer;
+    font-size: 32px;
+}
+
+#nav .logo-D .logo-P img{
+    margin: 20px;
+    height: 85px;
+}
+
+#page1{
+    min-height: 100vh ;
+    position: relative;
+    width: 100%;
+    padding: 0 0vw;
+    padding-top: 18vh;
+}
+
+@font-face {
+    font-family: futura;
+    src: url(fonts/Futura-Bold.ttf);
+}
+
+#page1 h1{
+    font-family: futura;
+    font-size: 10.25vw;
+    text-transform: uppercase;
+    line-height: 0px;
+    letter-spacing: -4px;
+    margin-bottom: 90px;
+    
+}
+
+@font-face {
+    font-family: nike;
+    src: url(fonts/Nike-Bold.ttf);
+}
+
+#page1 h6{
+    text-transform: uppercase;
+    font-family: nike;
+    font-size: 3.2vw;
+    letter-spacing: -2px;
+    padding-left: 8rem;
+    margin: 0;
+}
+
+.heading-1{
+    padding-top: 11vh;
+    position: relative;
+    padding-left: 2rem;
+}
+#video-container{
+    background-color: grey;
+    height: 100vh;
+    width: 100%;
+    margin-top: 1vw;
+
+}
+
+#video-container video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: relative;
+
+}
+
+#video-container #play {
+    padding: 3vw 2.2vw;
+    background-color: black;
+    color: #fff;
+    font-size: 1.3vw;
+    position: fixed;
+    z-index: 9;
+    transform: translate(-50%,-50%);
+    text-transform: uppercase;
+    font-family: futura;
+    border-radius: 50%;
+    opacity: 0;
+    scale: 0;
+}
+
+
+/* --------- PAGE 2 ----------- */
+
+#page2{
+    padding: 0vw 2.2vw;
+    margin-top: 70px;
+    height: 100%;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    /* align-self: center; */
+    align-items: center;
+    background-color:white;
+    flex-wrap: wrap;
+    gap: 3rem;
+
+    /* grid-template-columns: repeat(3, 30%);
+    grid-template-rows: repeat(2, 50%); */
+    /* column-gap: 4%;
+    row-gap: 10px; */
+}
+
+#page2 .elem{
+    height: 40rem;
+    width: 28rem;
+    display: flex;
+
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#page2 .elem img{
+    height: 85%;
+    width: 100%;
+    border-radius: 1.5%;
+    object-fit: cover;
+    transition: transform 0.3s;
+}
+
+#page2 .elem .roll{
+    height: 2rem; 
+    border-radius: 50px;
+    width: 19rem;
+    position: absolute;
+    z-index:9;
+    background-color: rgba(0, 0, 0, 0.504);
+    transition: height 0.4s;
+}
+
+#page2 .elem .roll:hover{
+    height: 9rem; 
+    border-radius: 16px;
+}
+
+#page2 .elem img:hover{
+    transform: scale(1.117);
+}
+
+#page2 .elem h6{
+    margin-top: 15px;
+    font-family: 'Lato', sans-serif;
+    font-size: 21px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#page2 .elem p{
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: gray;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 8px;
+}
+
+#page2 .elem p span{
+    display: flex;
+    font-family: 'Poppins', sans-serif;
+    padding-right: 8px;
+    color: rgb(88, 171, 255)
+}
+
+#page3{
+    min-height: 120vh;
+    width: 100%;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+    display: flex;
+    gap: 8rem;
+    position: relative;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    background: #F7F7F7;
+
+}
+
+#page3 .child{
+    height: 28rem;
+    width: 28rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#child4 image{
+    height: 94vh;
+}
+
+.child{
+    height: 54vh;
+    width: 38vh;
+    /* background-color: aquamarine; */
+    border: #fff;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+
+.child img{
+    height: 100%;
+}
+
+.child p{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#advertisement{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    padding: 8.3rem 3rem; 
+    width: 100%;
+}
+
+.ads{
+    text-transform: uppercase;
+    font-family: nike;
+    font-size: 3.5vw;
+    width: 50%;
+    letter-spacing: -2px;
+    margin: 0;
+}
+
+.ads h6{
+    text-transform: uppercase;
+    font-family: nike;
+    font-size: 3.5vw;
+    letter-spacing: -2px;
+    margin: 0;
+}
+
+.ads-para{
+    font-family: 'Lato', sans-serif;
+    width: 50%;
+}
+
+.ads-para ul li{
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    font-size: 19px;
+}
+.poster img{
+    
+    height: 100%; 
+    width: 100%;
+    position: relative;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* --------- media at 875px and below ---------- */
+@media(max-width:875px) {
+
+    #page1{
+        padding-top: 5vh;
+    }
+
+    #page1 h1{
+        text-transform: uppercase;
+        margin-bottom: 60px;
+        
+    }
+
+    #video-container{
+        height: 80vw;
+        width: 100%;
+    }
+    #page2{
+        margin-top: 12px;
+        height: 100%;
+        display: grid;
+        width: 100%;
+        justify-content: space-around;
+        grid-template-columns: repeat(2, 30%);
+    }
+}
+
+@media(max-width:650px) {
+    #page1 h1{
+        margin-bottom: 30px;
+    }
+    #page2{
+        margin-top: 5%;
+    }
+    #page2 .elem p{
+        font-size: 12px;
+    }
+    #page2 .elem h6{
+        margin-top: 15px;
+        font-family: 'Lato', sans-serif;
+        font-size: 15px;
+    }
+}
